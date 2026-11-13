@@ -1,0 +1,11 @@
+[Desktop Entry]
+Type=Application
+Name=screensaver4wayland
+Comment=Start the GNOME Wayland screensaver service
+Exec=/usr/libexec/screensaver4wayland-start-session
+TryExec=/usr/bin/screensaver4wayland
+Icon=io.github.sunmaple.Screensaver4Wayland
+OnlyShowIn=GNOME;
+NoDisplay=true
+Terminal=false
+X-GNOME-Autostart-enabled=true

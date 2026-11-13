@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128" role="img" aria-labelledby="title description">
+  <title id="title">静景 · screensaver4wayland</title>
+  <desc id="description">一台显示落日与青绿山景的桌面显示器。</desc>
+  <defs>
+    <linearGradient id="case" x1="0" y1="0" x2="0" y2="1">
+      <stop stop-color="#40546c"/>
+      <stop offset="1" stop-color="#1c2b40"/>
+    </linearGradient>
+    <linearGradient id="sky" x1="0" y1="0" x2="0.8" y2="1">
+      <stop stop-color="#132746"/>
+      <stop offset="0.6" stop-color="#205b78"/>
+      <stop offset="1" stop-color="#408c9a"/>
+    </linearGradient>
+    <linearGradient id="hill" x1="0" y1="0" x2="0.7" y2="1">
+      <stop stop-color="#6ce3c7"/>
+      <stop offset="1" stop-color="#27a89f"/>
+    </linearGradient>
+    <linearGradient id="stand" x1="0" y1="0" x2="1" y2="0.8">
+      <stop stop-color="#d4e2e9"/>
+      <stop offset="0.5" stop-color="#a3b9c9"/>
+      <stop offset="1" stop-color="#6b849c"/>
+    </linearGradient>
+    <clipPath id="screen">
+      <rect x="15" y="22" width="98" height="60" rx="6"/>
+    </clipPath>
+  </defs>
+
+  <!-- The transparent silhouette stays legible on both light and dark docks. -->
+  <rect x="8" y="19" width="112" height="78" rx="12" fill="#091526" opacity="0.18"/>
+  <path d="M55 88h18l3 20H52z" fill="url(#stand)"/>
+  <path d="M55 88h18l1 9H54z" fill="#5e738a"/>
+  <path d="M48 105h32c5 0 14 7 14 10 0 2-3 4-7 4H41c-4 0-7-2-7-4 0-3 9-10 14-10z" fill="#647e95"/>
+  <path d="M48 104h32c5 0 14 7 14 10 0 2-3 3-7 3H41c-4 0-7-1-7-3 0-3 9-10 14-10z" fill="url(#stand)"/>
+  <path d="M43 111h42" stroke="#e5eef3" stroke-width="2" stroke-linecap="round" opacity="0.75"/>
+
+  <rect x="8" y="15" width="112" height="78" rx="12" fill="url(#case)"/>
+  <rect x="8.75" y="15.75" width="110.5" height="76.5" rx="11.25" fill="none" stroke="#91abc3" stroke-width="1.5" opacity="0.36"/>
+  <rect x="13" y="20" width="102" height="64" rx="8" fill="#101e31"/>
+  <g clip-path="url(#screen)">
+    <rect x="15" y="22" width="98" height="60" fill="url(#sky)"/>
+    <circle cx="89" cy="39" r="10" fill="#ffdfa0"/>
+    <circle cx="35" cy="36" r="1.4" fill="#c4f0ed" opacity="0.85"/>
+    <path d="M15 65C29 62 37 43 50 48s23 19 37 14 18-12 26-10v30H15z" fill="url(#hill)"/>
+    <path d="M15 76c17-15 25-16 39-10s22 12 37 4 16-9 22-8v20H15z" fill="#118c8e"/>
+    <path d="M15 80c17-5 35-5 51-1s32-2 47-9v12H15z" fill="#096171"/>
+    <path d="M22 25h30" stroke="#e5f5ff" stroke-width="1.5" stroke-linecap="round" opacity="0.23"/>
+  </g>
+  <circle cx="64" cy="88" r="1.5" fill="#7ce5ce"/>
+</svg>

@@ -1,0 +1,6 @@
+#!/bin/sh
+set -e
+
+[ "${XDG_SESSION_TYPE:-}" = wayland ] || exit 0
+systemctl --user daemon-reload
+exec systemctl --user start screensaver4wayland.service

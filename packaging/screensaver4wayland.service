@@ -1,0 +1,16 @@
+[Unit]
+Description=Screensaver4Wayland GNOME Wayland image screensaver
+PartOf=graphical-session.target
+After=graphical-session-pre.target
+ConditionEnvironment=XDG_SESSION_TYPE=wayland
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/screensaver4wayland --daemon
+Environment=GDK_BACKEND=wayland
+Environment=PYTHONUNBUFFERED=1
+Restart=on-failure
+RestartSec=5
+
+[Install]
+WantedBy=graphical-session.target

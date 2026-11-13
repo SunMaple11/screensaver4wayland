@@ -1,0 +1,30 @@
+[Desktop Entry]
+Type=Application
+Name=screensaver4wayland · 静景
+Name[zh_CN]=静景 · 屏保控制台
+Comment=Per-monitor image screensaver for GNOME Wayland
+Comment[zh_CN]=为每块屏幕选择图片、轮播和预览
+Exec=/usr/bin/screensaver4wayland --settings
+TryExec=/usr/bin/screensaver4wayland
+Icon=io.github.sunmaple.Screensaver4Wayland
+Terminal=false
+Categories=Settings;
+Keywords=screensaver4wayland;Screensaver;Wayland;屏保;静景;
+StartupNotify=true
+StartupWMClass=io.github.sunmaple.Screensaver4Wayland
+Actions=Preview;Pause;Resume;
+
+[Desktop Action Preview]
+Name=Preview
+Name[zh_CN]=立即预览
+Exec=/usr/bin/screensaver4wayland --preview
+
+[Desktop Action Pause]
+Name=Pause
+Name[zh_CN]=暂停自动屏保
+Exec=/usr/bin/screensaver4wayland --pause
+
+[Desktop Action Resume]
+Name=Resume
+Name[zh_CN]=恢复自动屏保
+Exec=/usr/bin/screensaver4wayland --resume

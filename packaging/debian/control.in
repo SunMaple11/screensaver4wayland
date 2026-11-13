@@ -1,0 +1,15 @@
+Package: screensaver4wayland
+Version: @VERSION@
+Section: x11
+Priority: optional
+Architecture: all
+Maintainer: @MAINTAINER@
+Installed-Size: @INSTALLED_SIZE@
+Depends: python3 (>= 3.10), python3-gi, python3-cairo, python3-gi-cairo, python3-pil (>= 9.0), gir1.2-gtk-3.0 (>= 3.24), gir1.2-gdkpixbuf-2.0, librsvg2-common, hicolor-icon-theme, gnome-shell (>= 42), dbus-user-session, systemd (>= 249)
+Description: Per-monitor image screensaver for GNOME on Wayland
+ Displays still images or independent slideshows on each monitor after an
+ idle timeout. Includes a native GTK settings window and JPEG, PNG, WebP
+ and BMP support. Keyboard or pointer activity dismisses the screensaver.
+ .
+ Designed and tested on Ubuntu 22.04 with GNOME 42 and Wayland.
+ Uses GNOME Mutter interfaces. This is not a password screen locker.

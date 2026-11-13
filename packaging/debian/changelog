@@ -1,0 +1,8 @@
+screensaver4wayland (1.3.1-1) unstable; urgency=medium
+
+  * Initial public release of the GNOME Wayland image screensaver.
+  * Support independent monitor images, slideshows, scaling and native settings.
+  * Include WebP decoding, a monitor SVG icon and desktop identity integration.
+  * Add architecture-independent Debian package and reproducible source archives.
+
+ -- SunMaple <1193067705@qq.com>  Sat, 14 Nov 2026 00:00:00 +0000

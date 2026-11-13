@@ -1,0 +1,12 @@
+#!/bin/sh
+set -e
+
+root=${DPKG_ROOT:-}
+case "$1" in
+    remove|upgrade|deconfigure)
+        if command -v py3clean >/dev/null 2>&1 && [ -d "$root/usr/share/screensaver4wayland" ]; then
+            py3clean -q "$root/usr/share/screensaver4wayland"
+        fi
+        ;;
+esac
+exit 0
